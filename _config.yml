@@ -1,6 +1,6 @@
 # Site settings
-title: Community Health Explorer
-baseurl: "/community-health-explorer" # the subpath of your site, e.g. /blog
+title: U.S. Indicators for Sustainable Development Goals
+baseurl: "/sdg-indicators" # the subpath of your site, e.g. /blog
 
 # Build settings
 markdown: kramdown
