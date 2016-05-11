@@ -5,6 +5,18 @@ body {
 header.site-header img {
     height : 90px !important;
 }
+.goal-icon {
+  width : 160px; 
+  margin : .5rem;
+  display : inline-block;
+}
+
+.goals-list {
+  display : block;
+  clear : both;
+
+}
+
 #map { 
   height: 100%;
   left: -20px;
