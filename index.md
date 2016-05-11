@@ -1,32 +1,21 @@
 ---
 layout: default
-title: Community Health Assessment
+title: Data Platform Prototype
 ---
 
 <br>
-The Community Health Explorer is a joint project between the City of Philadelphia's [Department of Public Health](http://www.phila.gov/health/) and [Office of Innovation and Technology](http://www.phila.gov/it). The Explorer is intended to provide easy-to-use, responsive and accessible visualization tools for viewing the vast amount of data collected annually for the Community Health Assessment.
+Vestibulum laoreet dolor vel arcu fermentum fermentum. Cras eu ullamcorper tellus, vitae elementum est. Maecenas eu sem a felis vulputate rhoncus eget nec dolor. Aliquam consectetur augue quis nulla pretium, nec iaculis arcu laoreet. In ut gravida sem. Cras odio lorem, mattis faucibus pellentesque non, convallis sit amet mi. Proin et malesuada dui. Donec gravida faucibus arcu, eget sodales lectus tincidunt ac. 
 
-
-
-<h2>About the Community Health Assessment (CHA)</h2>
-
-The CHA is a systematic assessment of population health in Philadelphia, highlighting key public health challenges and assets and informing local public health programs, policies, and partnerships. The CHA includes indicators reflecting health behaviors, health conditions, health care factors, and social and environmental determinants of health.
-
-{% include home-cards.html %}
-
-The Community Health Assessment report is [available for download](http://www.phila.gov/health/commissioner/DataResearch.html) on the Department of Public Health site.
-
-
+<h2>About the Data Platform Prototype</h2>
+Aliquam sed risus nec arcu bibendum porttitor a in urna. Suspendisse pretium felis enim, in hendrerit sapien feugiat vitae. Nulla semper vehicula faucibus. Duis eget sem elementum, tempus tellus at, interdum neque. Donec at ex massa. 
 
 <h2>About the Application</h2>
 
-<p>This is an open source project that uses the City of Philadelphia patterns, Jekyll, Leaflet.js, and Chartist.js. </p>
+<p>This is an open source project based on the work of the City of Philadelphia and existing tools including Jekyll, Leaflet.js, and Chartist.js. </p>
 
-[Feedback](http://phila.gov/feedback) & contributions are welcome.
+[View the original source code](https://github.com/CityOfPhiladelphia/community-health-explorer)
 
-[View the source code](https://github.com/CityOfPhiladelphia/community-health-explorer)
-
-<h5>Data:</h5>
+<h5>Download the Data:</h5>
 
 - [Planning Districts]({{ site.basurl }}/_data/planning_district.csv)
 - [Racial Disparity]({{ site.basurl }}/_data/racial_disparity.csv)
