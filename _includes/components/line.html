@@ -13,15 +13,13 @@
     series: [series]
   }
   var chartOpts = {
-    low: 0,
-//    high: 1,
-    onlyInteger: true,
     showArea: true,
     scaleMinSpace: 30,
     axisY: {
+      onlyInteger: false,
       labelInterpolationFnc: function (value) {
         // do whatever math operation you want here
-        return Math.floor(value * 1) + '%';
+        return value + '%';
       }
     },
     axisX: {
@@ -37,7 +35,7 @@
       Chartist.plugins.tooltip({
         class: 'chartist-tooltip',
         tooltipFnc: function(_, value) {
-          return Math.floor(value * 1) + '%';
+          return value + '%';
         }
       }),
       Chartist.plugins.ctAccessibility({
