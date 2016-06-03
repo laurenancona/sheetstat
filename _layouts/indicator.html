@@ -40,7 +40,7 @@
   {% assign labels = labels | push: indicator.year %}
 {% endfor %}
 
-<h2>{{ page.indicator }} - {{ indicator_title }}</h2>
+<h2>Indicator {{ page.indicator }} - {{ indicator_title }}</h2>
 
 {% if page.graph == 'longitudinal' %}
   {% include components/line.html row=row labels=labels %}
@@ -49,9 +49,14 @@
 <h3>{{ page.variable_description }}</h3>
 <p>{{ page.variable_notes }}</p>
 
-<h4>Source: <a href="{{ page.source_url }}">{{ page.source_title }}</a></h4>
-<p>{{ page.source_notes }}</p>
+<aside id="secondary" class="related plm-mu">
 
+  <h4>Source: <a href="{{ page.source_url }}">{{ page.source_title }}</a></h4>
+  <p>{{ page.source_notes }}</p>
+
+  <a href="{{ site.baseurl }}/data/{{ dataset_name }}.csv" class="button icon">Download CSV<i class="fa fa-download"></i></a>
+
+</aside>
 
 <h2>Goal {{ page.sdg_goal }}</h2>
 
