@@ -62,7 +62,7 @@
 {% assign slug = indicators.indicator_id | replace: '.', '-' %}
 
 {% if goal == page.sdg_goal %}
-  <h5><a href="/{{ slug }}">{{ indicators.indicator_id }} {{ indicators.indicator }}</a></h5>
+  <h5><a href="{{ site.baseurl }}/{{ slug }}">{{ indicators.indicator_id }} {{ indicators.indicator }}</a></h5>
 {% endif %}
 
 {% endfor %}
