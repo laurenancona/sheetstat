@@ -19,7 +19,10 @@ The Sustainable Development Goals (SDGs) are an intergovernmental set of aspirat
     {% assign img_path = ''  %}
 {% endif %}
 
-<img class="goal-icon" src="{{ site.baseurl }}/assets/TGG_Icon_Color_{{ img_path }}{{ goals.goal }}.png" />
+
+<a href="./{{ goals.short | slugify }}">
+<img class="goal-icon" src="{{ site.baseurl }}/assets/TGG_Icon_Color_{{ img_path }}{{ goals.goal }}.png" alt="icon for Goal {{ goals.goal }} - {{ goals.title }}" />
+</a>
 
 {% endfor %}
 

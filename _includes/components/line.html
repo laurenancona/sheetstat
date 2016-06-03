@@ -1,4 +1,4 @@
-{% assign id = include.row.Indicator | slugify %}
+{% assign id = page.indicator | slugify %}
 <div id="chart-{{ id }}" class="ct-chart ct-major-eleventh"></div>
 <script>
 (function () {
@@ -7,9 +7,7 @@
   var row = {{ include.row | jsonify }}
 
   // Construct array of objects from data using indicators
-  var series = labels.map(function (col) {
-    return row[col] || null
-  })
+  var series = row
   var chartData = {
     labels: labels,
     series: [series]
@@ -23,7 +21,7 @@
     axisY: {
       labelInterpolationFnc: function (value) {
         // do whatever math operation you want here
-        return Math.floor(value * 100) + '%';
+        return Math.floor(value * 1) + '%';
       }
     },
     axisX: {
@@ -39,7 +37,7 @@
       Chartist.plugins.tooltip({
         class: 'chartist-tooltip',
         tooltipFnc: function(_, value) {
-          return Math.floor(value * 100) + '%';
+          return Math.floor(value * 1) + '%';
         }
       }),
       Chartist.plugins.ctAccessibility({

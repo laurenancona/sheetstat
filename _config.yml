@@ -1,6 +1,6 @@
 # Site settings
 title: U.S. Indicators For The Sustainable Development Goals
-baseurl: "/sdg-indicators" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 
 # Build settings
 markdown: kramdown
